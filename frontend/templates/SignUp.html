@@ -22,10 +22,14 @@
                  <div class="myIcon"><img src="../media/images/blueIcon.jpg" height="30px" width="30px"></div>
 				<form class="block1" method = "post" action="process.php"  enctype = "multipart/form-data">
                     <h3 class="2">SIGN-UP FORM</h3>
-					<input type="text" name = "username" placeholder="Enter your Name"><br>
-                    <input type="text"  name = "emailid" placeholder="Enter your Email-Id"><br>
-					<input type="Password" name="pass" placeholder="Enter your Password"><br>
-                    <input type="Password" name="confpass" placeholder="Confirm your Password"><br><br>
+					<input type="text" name = "username" placeholder="Enter your Name"><br><br>
+                    <input type="text"  name = "emailid" placeholder="Enter your Email-Id"><br><br>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="Enter telephone number"><br><br>
+                     <input type="radio" name="is_provider" value="user"> user
+                      <input type="radio" name="is_provider" value="service_provider"> ServiceProvider<br><br>
+
+					<input type="Password" name="pass" placeholder="Enter your Password"><br><br>
+                   
 					<input type="submit" class="LoginButton" value="Sign Up"><br>
 					<a href="LoginPage.html" style="float:right; margin-right: 50px; font-family: monospace; color:#008CBA;">LOGIN INSTEAD?</a>
                 </form>
